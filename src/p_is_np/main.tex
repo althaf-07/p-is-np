@@ -1,0 +1,73 @@
+\documentclass[12pt, reqno]{amsart}
+\usepackage{amsmath, amsthm, amscd, amsfonts, amssymb, graphicx, xcolor, algorithm, algpseudocode}
+\usepackage[bookmarksnumbered, colorlinks, plainpages]{hyperref}
+
+\textheight 22.5truecm \textwidth 14.5truecm
+\setlength{\oddsidemargin}{0.35in}\setlength{\evensidemargin}{0.35in}
+
+\setlength{\topmargin}{-.5cm}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{summary}[theorem]{Summary}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{problem}[theorem]{Problem}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\numberwithin{equation}{section}
+
+\begin{document}
+\setcounter{page}{1}
+
+\color{darkgray}{
+  \noindent
+  {\small Annals of Mathematics and Computer Science}\hfill     {\small ISSN: 2789-7206}\\
+{\small Vol 20 (2024) 1-3}\hfill  {\small https://doi.org/10.56947/amcs.v20.223}}
+
+\centerline{}
+
+\centerline{}
+
+%------------------------------------------------------------------------------
+
+\title[P is NP]{P is NP}
+\author[Althaf Muhammad]{Althaf Muhammad$^1$}
+\address{$^{1}$ Unaffiliated}
+\email{\textcolor[rgb]{0.00,0.00,0.84}{zoory9900@gmail.com}}
+
+\date{Received: xxxxxx; Revised: yyyyyy; Accepted: zzzzzz.
+  \newline \indent $^{*}$ Corresponding author
+  \newline \indent © The Author(s) 2025. This article is licensed under a Creative Commons Attribution-
+  \newline \indent NonCommercial-NoDerivatives 4.0
+  International License. To view a copy of the licence, visit
+\newline \indent \url{https://creativecommons.org/licenses/by-nc-nd/4.0/}}
+
+\begin{abstract}
+The Subset Sum Problem is a decision problem in theoretical computer science: given a finite set \(S\) of positive integers and a target value \(T\), determine whether there exists a subset of \(S\) whose elements sum exactly to T. This problem is one of the NP-complete problems identified by Karp, and no deterministic polynomial-time algorithm is currently known. The best-known exact algorithms run in exponential time, although pseudo-polynomial time algorithms exist via dynamic programming. Subset Sum is therefore classified as a weakly NP-complete problem. In this work, we present an algorithm that solves the Subset Sum Problem in polynomial time.
+  \newline
+  \newline
+  \noindent \textit{Keywords.} Subset Sum Problem, NP-complete problems, Computational complexity, Deterministic polynomial time
+  \newline
+  \noindent \textit{2020 Mathematics Subject Classification.} Primary 68Q15; Secondary 68Q25
+\end{abstract} \maketitle
+
+%------------------------------------------------------------------------------
+
+\section{Introduction and Preliminaries}
+
+\noindent I chose Subset Sum Problem from many NP-complete problems because I wanted a problem that was simple to understand and can be experimented freely in a computer without additional logic conversions. The proof technique used is \emph{proof by algorithm}, meaning my algorithm is my proof. I will add pseudocode and explanations later for this algorithm in this research paper. The algorithm code is in Python programming language, but I wrote it in a way that feels like it is pseudocode. So even if you don't know Python, you can follow along. The GitHub repository for this research paper and the algorithm is here: https://github.com/althaf-07/p-is-np.git.
+
+\end{document}
+
+%------------------------------------------------------------------------------
+% End of main.tex
+%------------------------------------------------------------------------------
